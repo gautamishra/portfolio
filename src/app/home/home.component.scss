@@ -1,0 +1,197 @@
+
+.container1{
+    display: flex;
+    background-color: black;
+    height: 100vh;
+    .info-container{
+        width: 40%;
+        font-family: 'Open Sans';
+        text-transform: uppercase;
+  
+        .text{
+          transform: translate(30%,80%);
+          color: white;
+          transform-origin: left;
+          .main-text{
+            // overflow: hidden;
+           
+            position: relative;
+          
+            span {
+            position: absolute;
+            // animation: center-animate 1s ease infinite alternate;
+            .var-text{
+               
+                margin-left: 10px;
+                height: 44px;
+                overflow: hidden;
+                // transform: scaleX(60);
+                color: #ffb400;
+               
+                // b{      
+                //     position: absolute;
+                //     display: inline;
+                //     height: 44px;
+                // }
+
+                // animation: width 1s ease-in-out alternate infinite;
+            }
+        }
+    }
+  }
+}
+
+    .img-container{
+        margin-left: auto;
+        position: relative;
+        left: -18%;
+        top: 21%;    
+        .image{
+            width: 400x;
+            height: 400px;
+            animation:loadImage .5s linear;
+        }
+        // animation: MotionScale 2s alternate linear infinite;
+    }
+
+}
+
+.img-container-sm{
+  position: relative;
+  .image{
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    width: 100px;
+    height: 186px;
+    animation: MotionScale-1 4s alternate linear infinite;
+}
+
+}
+
+.img-absolute{
+  position: absolute;
+  top: 0;
+  .image{
+    position: absolute;
+    animation: MotionScale-1 4s alternate linear infinite;
+}
+}
+
+.btn-container {
+  transform: translate(70%,70%);
+  .btn-danger{
+    background-color: rgb(238, 51, 100);
+    border-radius: 5px;
+    width: 30%;
+    height: 60px;
+    border: none;
+    font-size: 18px;
+    color: white;
+  }
+  :hover{
+    cursor: pointer;
+  }
+}
+
+
+
+.var-text {
+    margin-left: 10px;
+    color: #ffb400;
+}
+
+header{
+
+  display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+@keyframes loadImage {
+    from {
+       transform: scale(.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes MotionScale {
+    from {
+      transform: matrix3d(
+        1,0,0,0,
+        0,1,0,0,
+        0,0,1,0,
+        0,0,0,1
+      );
+      
+    }
+    to {
+       transform: matrix3d(
+        1,0,0,0,
+        0,1,0,0,
+        0,0,1,0,
+        0,20,0,1
+      )
+    }
+  }
+
+  @keyframes MotionScale-1 {
+    from {
+      transform: matrix3d(
+        1,0,0,0,
+        0,1,0,0,
+        0,0,1,0,
+        4.3,6.8,0,1
+      );
+      
+    }
+    20% {
+       transform: matrix3d(
+        1,0,0,0,
+        0,1,0,0,
+        0,0,1,0,
+        2.12,4.233,0,1
+      )
+    }
+    40% {
+        transform: matrix3d(
+         1,0,0,0,
+         0,1,0,0,
+         0,0,1,0,
+         -2,1.34,0,1
+       )
+     }
+     60% {
+        transform: matrix3d(
+         1,0,0,0,
+         0,1,0,0,
+         0,0,1,0,
+         -3,-1.367,0,1
+       )
+     }
+     80% {
+        transform: matrix3d(
+         1,0,0,0,
+         0,1,0,0,
+         0,0,1,0,
+         -4,-1,0,1
+       )
+     }
+
+    to {
+        transform: matrix3d(
+            1,0,0,0,
+            0,1,0,0,
+            0,0,1,0,
+            -5,-3,0,1
+          )
+    }
+  }
+  
+
+  @keyframes center-animate {
+    0% { transform: scaleX(10) }
+    100% { transform: scaleX(0) }
+}
