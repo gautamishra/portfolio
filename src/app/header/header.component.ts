@@ -20,13 +20,22 @@ export class HeaderComponent implements OnInit {
   }
 
   navigate = (event: any) => {
+    if(event.target.innerText === 'Project'){
     let tab = event.target.innerText.toLowerCase();
    this.router.navigate([`/${tab}`]);
+    } else {
+      window.location.href = 'https://github.com/gautamishra';
+    }
   }
 
   navigateMob = (tab: any) => {
     this.openNav();
-   this.router.navigate([`/${tab}`]);
+    if(tab === 'project'){
+      window.location.href = 'https://github.com/gautamishra';
+    } else {
+      this.router.navigate([`/${tab}`]);
+    }
+
   }
 
   openNav = () => {

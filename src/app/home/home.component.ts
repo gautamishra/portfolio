@@ -12,4 +12,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navigate() {
+    window.location.href = 'https://github.com/gautamishra';
+  }
 }
