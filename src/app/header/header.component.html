@@ -1,18 +1,33 @@
 
-<ul (click)="navigate($event)">
-        <li class="icon-box">
-          Home<fa-icon class="icon" [icon]="faHome"></fa-icon>
+ <header class="header">
+    <div class="mob-nav .d-block .d-sm-none">
+        <span  (click)="openNav()">&#9776;</span>
+    </div>
+    <div *ngIf="toggle" class="overlay d-md-block">
+        <a href="javascript:void(0)" class="closebtn" (click)="toggle = !toggle">&times;</a>
+        <div class="overlay-content">
+            <a [routerLink]="['/home']" >Home<fa-icon class="icon" [icon]="faHome"></fa-icon></a>
+            <a [routerLink]="['/about']" >About<fa-icon class="icon" [icon]="faUSer"></fa-icon></a>
+            <a [routerLink]="['/contact']" > Contact<fa-icon class="icon" [icon]="faEnvolope"></fa-icon></a>
+            <a [routerLink]="['/project']" >Project<fa-icon class="icon" [icon]="faEnvolope"></fa-icon></a>
+        </div>
+      </div>
+
+
+    <div class="d-xs-block">
+    <ul (click)="navigate($event)" class="icon-menu d-none d-lg-block">
+        <li class="icon-box active">
+            Home<fa-icon class="icon" [icon]="faHome"></fa-icon>
         </li>
         <li class="icon-box">
-            
             About<fa-icon class="icon" [icon]="faUSer"></fa-icon>
         </li>
-      
         <li class="icon-box">
             Contact<fa-icon class="icon" [icon]="faEnvolope"></fa-icon>
         </li>
-      
- </ul>
-
-
-
+        <li class="icon-box">
+            Project<fa-icon class="icon" [icon]="faEnvolope"></fa-icon>
+        </li>
+    </ul>
+    </div>
+</header>

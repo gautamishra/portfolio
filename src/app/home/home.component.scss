@@ -1,54 +1,37 @@
 
 .container1{
-    display: flex;
     background-color: black;
     height: 100vh;
     .info-container{
-        width: 40%;
         font-family: 'Open Sans';
         text-transform: uppercase;
-  
         .text{
-          transform: translate(30%,80%);
+          position: relative;
+          top: 30%;
           color: white;
           transform-origin: left;
-          .main-text{
-            // overflow: hidden;
-           
-            position: relative;
-          
+          .main-text{           
+            position: relative;        
             span {
             position: absolute;
-            // animation: center-animate 1s ease infinite alternate;
             .var-text{
-               
                 margin-left: 10px;
                 height: 44px;
-                overflow: hidden;
-                // transform: scaleX(60);
                 color: #ffb400;
-               
-                // b{      
-                //     position: absolute;
-                //     display: inline;
-                //     height: 44px;
-                // }
-
-                // animation: width 1s ease-in-out alternate infinite;
             }
         }
     }
   }
 }
 
-    .img-container{
-        margin-left: auto;
-        position: relative;
-        left: -18%;
-        top: 21%;    
+
+    .img-container-md{
+
         .image{
+          position: relative;
             width: 400x;
             height: 400px;
+            top: 20%;   
             animation:loadImage .5s linear;
         }
         // animation: MotionScale 2s alternate linear infinite;
@@ -79,19 +62,7 @@
 }
 
 .btn-container {
-  transform: translate(70%,70%);
-  .btn-danger{
-    background-color: rgb(238, 51, 100);
-    border-radius: 5px;
-    width: 30%;
-    height: 60px;
-    border: none;
-    font-size: 18px;
-    color: white;
-  }
-  :hover{
-    cursor: pointer;
-  }
+  
 }
 
 
@@ -194,4 +165,50 @@ header{
   @keyframes center-animate {
     0% { transform: scaleX(10) }
     100% { transform: scaleX(0) }
+}
+
+
+@media (max-width: 769px){
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .img-container-sm{
+    display: none;
+  }
+
+  .img-container-md{
+    display: none;
+  }
+
+  .main-heading{
+    margin-top: 20%;
+  }
+  .text{
+    padding: 10px;
+    margin-top: 2% !important;
+  }
+  .hid-xs{
+    display: none;
+  }
+
+}
+
+.img-container-xs{
+  .responsive{
+    position: absolute;
+    margin-top: 10%;
+    max-width: 50%;
+    left: 20%;
+    height: auto;
+    border-radius: 100px;
+  }
+
+}
+
+@media(min-width: 769px){
+  .img-container-xs{
+    display: none;
+  }
 }

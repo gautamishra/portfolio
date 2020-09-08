@@ -42,7 +42,7 @@ export class AppComponent implements OnInit, AfterViewInit{
 
   ngAfterViewInit() {
     this.val = placeholderText[0];
-   this.getUpdatedWidth();
+  //  this.getUpdatedWidth();
   }
 
   getUpdatedWidth() {

@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   faHome = faHome;
   faUSer = faUser;
   faEnvolope = faEnvelope;
+  toggle = false;
 
   constructor(private router: Router) { }
 
@@ -21,5 +22,9 @@ export class HeaderComponent implements OnInit {
   navigate = (event: any) => {
     let tab = event.target.innerText.toLowerCase();
    this.router.navigate([`/${tab}`]);
+  }
+
+  openNav = () => {
+    this.toggle =!this.toggle;
   }
 }
