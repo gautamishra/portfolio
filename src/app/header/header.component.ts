@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   }
 
   navigate = (event: any) => {
-    if(event.target.innerText === 'Project'){
+    if(event.target.innerText !== 'Project'){
     let tab = event.target.innerText.toLowerCase();
    this.router.navigate([`/${tab}`]);
     } else {
