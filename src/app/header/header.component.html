@@ -1,15 +1,15 @@
 
  <header class="header">
-    <div class="mob-nav .d-block .d-sm-none">
+    <div  class="mob-nav .d-block .d-sm-none">
         <span  (click)="openNav()">&#9776;</span>
     </div>
     <div *ngIf="toggle" class="overlay d-md-block">
         <a href="javascript:void(0)" class="closebtn" (click)="toggle = !toggle">&times;</a>
         <div class="overlay-content">
-            <a [routerLink]="['/home']" >Home<fa-icon class="icon" [icon]="faHome"></fa-icon></a>
-            <a [routerLink]="['/about']" >About<fa-icon class="icon" [icon]="faUSer"></fa-icon></a>
-            <a [routerLink]="['/contact']" > Contact<fa-icon class="icon" [icon]="faEnvolope"></fa-icon></a>
-            <a [routerLink]="['/project']" >Project<fa-icon class="icon" [icon]="faEnvolope"></fa-icon></a>
+            <a  (click)="navigateMob('home')">Home<fa-icon class="icon" [icon]="faHome"></fa-icon></a>
+            <a (click)="navigateMob('about')" >About<fa-icon class="icon" [icon]="faUSer"></fa-icon></a>
+            <a (click)="navigateMob('contact')"> Contact<fa-icon class="icon" [icon]="faEnvolope"></fa-icon></a>
+            <a (click)="navigateMob('project')" >Project<fa-icon class="icon" [icon]="faEnvolope"></fa-icon></a>
         </div>
       </div>
 

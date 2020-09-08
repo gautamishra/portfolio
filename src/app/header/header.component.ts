@@ -24,6 +24,11 @@ export class HeaderComponent implements OnInit {
    this.router.navigate([`/${tab}`]);
   }
 
+  navigateMob = (tab: any) => {
+    this.openNav();
+   this.router.navigate([`/${tab}`]);
+  }
+
   openNav = () => {
     this.toggle =!this.toggle;
   }
