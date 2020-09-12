@@ -338,19 +338,48 @@ ul {
     border-color: #fdba04;
 }
 .progress.p-75 .progress-left .progress-bar{
-    animation: loading-3 1s linear forwards 1.8s;
+    animation: loading-75 1s linear forwards 1.8s;
 }
 .progress.p-95 .progress-bar{
     border-color: #fdba04;
 }
+
+.progress.p-80 .progress-bar{
+    border-color: #fdba04;
+}
+.progress.p-80 .progress-left .progress-bar{
+    animation: loading-80 1s linear forwards 1.8s;
+}
+
+.progress.p-70 .progress-bar{
+    border-color: #fdba04;
+}
+.progress.p-70 .progress-left .progress-bar{
+    animation: loading-70 1s linear forwards 1.8s;
+}
+
+.progress.p-85 .progress-bar{
+    border-color: #fdba04;
+}
+.progress.p-85 .progress-left .progress-bar{
+    animation: loading-85 1s linear forwards 1.8s;
+}
+
+.progress.p-60 .progress-bar{
+    border-color: #fdba04;
+}
+.progress.p-60 .progress-left .progress-bar{
+    animation: loading-60 1s linear forwards 1.8s;
+}
+
 .progress.p-95 .progress-left .progress-bar{
-    animation: loading-4 0.4s linear forwards 1.8s;
+    animation: loading-95 0.4s linear forwards 1.8s;
 }
 .progress-bar{
     border-color: #fdba04;
 }
 .progress.p-80 .progress-left .progress-bar{
-    animation: loading-5 1.2s linear forwards 1.8s;
+    animation: loading-80 1.2s linear forwards 1.8s;
 }
 
 @keyframes loading-1{
@@ -373,7 +402,7 @@ ul {
         transform: rotate(25deg);
     }
 }
-@keyframes loading-3{
+@keyframes loading-75{
     0%{
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -383,7 +412,7 @@ ul {
         transform: rotate(90deg);
     }
 }
-@keyframes loading-4{
+@keyframes loading-95{
     0%{
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -393,16 +422,50 @@ ul {
         transform: rotate(170deg);
     }
 }
-@keyframes loading-5{
+@keyframes loading-80{
     0%{
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     100%{
         -webkit-transform: rotate(110deg);
-        transform: rotate(110deg);
+        transform: rotate(140deg);
     }
 }
+
+@keyframes loading-85{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(110deg);
+        transform: rotate(160deg);
+    }
+}
+
+@keyframes loading-70{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(110deg);
+        transform: rotate(70deg);
+    }
+}
+
+@keyframes loading-60{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(110deg);
+        transform: rotate(50deg);
+    }
+}
+
 @media only screen and (max-width: 990px){
     .progress{ margin-bottom: 20px; }
     .title-bg {

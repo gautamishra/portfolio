@@ -18,6 +18,11 @@ ul{
         transition: all 0.2s ease-in-out;
         &:hover{
             cursor: pointer;
+           
+        }
+        a{
+          text-decoration: none;
+          color: white;
         }
     }
 } 
