@@ -1,5 +1,5 @@
 ## URL
-https://gautamishra.netlify.app/ , 
+https://gautamishra.netlify.app/ 
 
 https://gautamishra.github.io/portfolio/
 
