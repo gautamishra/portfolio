@@ -1,5 +1,5 @@
 ## URL
-https://git,io/gauti
+https://git.io/gauti
 
 https://gautamishra.netlify.app/ 
 
